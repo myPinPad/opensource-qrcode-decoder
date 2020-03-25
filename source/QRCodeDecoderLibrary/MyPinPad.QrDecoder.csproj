@@ -8,9 +8,6 @@
         <Company>MYPINPAD Limited</Company>
         <Authors>Uzi Granot</Authors>
 
-        <PackageId>MyPinPad.QrDecoder</PackageId>
-        <RootNamespace>MyPinPad.QrDecoder</RootNamespace>
-
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <Nullable>enable</Nullable>
 
