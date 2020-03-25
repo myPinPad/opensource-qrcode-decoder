@@ -44,7 +44,7 @@
 using System;
 using System.IO;
 
-namespace QRCodeDecoderLibrary
+namespace MyPinPad.QrDecoder
 {
 #if DEBUG
 /////////////////////////////////////////////////////////////////////

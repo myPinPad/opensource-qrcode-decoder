@@ -61,7 +61,7 @@ using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace QRCodeDecoderLibrary
+namespace MyPinPad.QrDecoder
 	{
 	/// <summary>
 	/// QR Code error correction code enumeration

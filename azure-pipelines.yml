@@ -1,0 +1,27 @@
+resources:
+  repositories:
+  - repository: templates
+    type: git
+    name: operations/build
+    ref: refs/tags/dotnet@latest
+
+trigger: [master]
+
+variables:
+- group: Build Keys
+- group: Packaging Settings
+
+jobs:
+- job: BuildPackages
+  pool: Services-Ops
+  steps:
+  - template: dotnet/build.yml@templates
+
+- job: PublishPackages
+  pool: Services-Ops
+  dependsOn: BuildPackages
+  condition: and(succeeded(), or(eq(variables['ForcePublishPackages'], 'true'), eq(variables['Build.SourceBranchName'], 'master')))
+  steps:
+  - template: dotnet/package.yml@templates
+    parameters:
+      publishVstsFeed: $(PublishVstsFeed)

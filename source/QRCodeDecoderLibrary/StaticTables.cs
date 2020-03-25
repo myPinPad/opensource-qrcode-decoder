@@ -41,7 +41,7 @@
 //	For version history please refer to QRDecoder.cs
 /////////////////////////////////////////////////////////////////////
 
-namespace QRCodeDecoderLibrary
+namespace MyPinPad.QrDecoder
 	{
 	internal class StaticTables
 	{

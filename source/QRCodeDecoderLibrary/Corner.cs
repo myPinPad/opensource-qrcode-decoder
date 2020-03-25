@@ -43,7 +43,7 @@
 
 using System;
 
-namespace QRCodeDecoderLibrary
+namespace MyPinPad.QrDecoder
 {
 /////////////////////////////////////////////////////////////////////
 // QR corner three finders pattern class
