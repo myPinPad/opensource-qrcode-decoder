@@ -8,7 +8,7 @@
         <Company>MYPINPAD Limited</Company>
         <Authors>Uzi Granot</Authors>
 
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
 
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
