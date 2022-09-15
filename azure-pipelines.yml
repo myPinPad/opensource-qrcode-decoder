@@ -13,12 +13,12 @@ variables:
 
 jobs:
 - job: BuildPackages
-  pool: Services-Ops
+  pool: Services
   steps:
   - template: dotnet/build.yml@templates
 
 - job: PublishPackages
-  pool: Services-Ops
+  pool: Services
   dependsOn: BuildPackages
   condition: and(succeeded(), or(eq(variables['ForcePublishPackages'], 'true'), eq(variables['Build.SourceBranchName'], 'master')))
   steps:
